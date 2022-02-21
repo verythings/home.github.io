@@ -8,13 +8,29 @@
     name="viewport"
     content="width=device-width, initial-scale=0.8, shrink-to-fit=no"
   />
-  <meta property="og:url" content="https://www.virgileguinard.fr/" />
+  <meta name="description" content="Verythings" />
+  <meta name="keywords" content="Verythings" />
+  <meta itemprop="name" content="Verythings" />
+  <meta itemprop="description" content="Verythings" />
+  <meta
+    itemprop="image"
+    content="https://assets.codepen.io/7604869/og-image.jpg"
+  />
+  <meta property="og:url" content="https://minguhong.com" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Verythings" />
   <meta property="og:description" content="Verythings" />
-
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#e2e9e7" />
+  <meta
+    property="og:image"
+    content="https://assets.codepen.io/7604869/og-image.jpg"
+  />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Verythings" />
+  <meta name="twitter:description" content="Verythings" />
+  <meta
+    name="twitter:image"
+    content="https://assets.codepen.io/7604869/og-image.jpg"
+  />
 
   <link rel="stylesheet" href="../css/style.css" />
 
@@ -34,9 +50,7 @@
           <div class="category-view">
             <div class="category-view-1">Branding</div>
             <div class="category-view-2">Space</div>
-            <div class="category-view-3">
-              Pop-up styling
-            </div>
+            <div class="category-view-3">Pop-up styling</div>
             <div class="category-view-4">Planting</div>
             <div class="category-view-5">Exhibition</div>
           </div>
@@ -682,11 +696,11 @@
     ></script>
     <script>
       $(window).load(function () {
-        $(".category-view").slideDown(1000, 'linear');
+        $(".category-view").slideDown(1000, "linear");
       });
 
-      $('.category-view-1').click(function(){
-        $('.portrait').slideToggle(1000);
+      $(".category-view-1").click(function () {
+        $(".portrait").slideToggle(1000);
       });
 
       window.dataLayer = window.dataLayer || [];
@@ -700,7 +714,6 @@
         $("html, body").animate({ scrollTop: 0 }, 400);
         return false;
       });
-
     </script>
 
     <!-- <a class="gotop" href="#top">〈</a> -->
