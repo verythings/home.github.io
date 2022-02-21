@@ -2901,7 +2901,7 @@ a {
   top: 64px;
   z-index: 10;
 
-  font-size: 1vw;
+  font-size: 4vw;
   line-height: 1.48;
 }
 
@@ -3616,7 +3616,7 @@ a.selected {
     top: 48px;
     z-index: 10;
 
-    font-size: 1vw;
+    font-size: 2.25vw;
     line-height: 1.48;
   }
 
