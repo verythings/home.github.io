@@ -2800,8 +2800,8 @@ body {
   font-family: "SuisseIntl-Book", "SpoqaHanSansNeo-Medium";
   font-size: 1rem;
   line-height: 1.6;
-  /* background-color: #44683e; */
-  background-color: #fff;
+  background-color: #44683e;
+
   color: white;
   overflow: auto;
 }
@@ -2872,8 +2872,8 @@ a {
   grid-template-rows: repeat(8, 1fr);
   left: 68%;
   top: 20px;
-  column-gap: 4px;
-
+  column-gap: 0.25rem;
+  row-gap: 0.1rem;
   z-index: 10;
 }
 .header-blend {
@@ -2882,7 +2882,7 @@ a {
   grid-template-columns: repeat(auto-fill, minmax(44%, auto));
   grid-template-rows: repeat(8, 1fr);
   left: 68%;
-  top: 0.8rem;
+  top: 20px;
   column-gap: 0.25rem;
   row-gap: 0.1rem;
 
