@@ -1,0 +1,238 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  line-height: 1.15;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Medium";
+  font-style: Medium;
+  font-weight: 600;
+  src: local("SpoqaHanSansNeo-Medium"), local("SpoqaHanSansNeo-Medium"),
+    url("../fonts/SpoqaHanSansNeo-Medium.woff") format("woff"),
+    url("../fonts/SpoqaHanSansNeo-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SuisseIntl-Book";
+  src: url(../fonts/SuisseIntl-Book.woff) format("woff");
+  font-weight: 400;
+  font-display: block;
+}
+
+body {
+  font-family: "SuisseIntl-Book", "SpoqaHanSansNeo-Medium";
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #44683e;
+
+  color: white;
+  overflow: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+p {
+  word-break: keep-all;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+.logo {
+  position: absolute;
+  width: 12.5%;
+  top: 20px;
+  left: 20px;
+  filter: invert(1);
+  z-index: 1001 !important;
+}
+
+.header {
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(44%, auto));
+  grid-template-rows: repeat(8, 1fr);
+  left: 93%;
+  top: 16px;
+  column-gap: 0.25rem;
+  row-gap: 0.1rem;
+  z-index: 10;
+}
+
+.l {
+  font-size: 1.4vw;
+}
+
+@media only screen and (max-device-width: 812px) and (orientation: portrait) {
+  .l {
+    font-size: 4vw;
+  }
+}
+
+.work-space {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+}
+.work-space-l {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+}
+.about-space {
+  grid-column: 1 / span 1;
+  grid-row: 2;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+}
+.about-space-l {
+  grid-column: 1 / span 1;
+  grid-row: 6;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+}
+.news-space {
+  grid-column: 1 / span 1;
+  grid-row: 3;
+  z-index: 9;
+
+  justify-content: center;
+  align-items: center;
+}
+.news-space-l {
+  grid-column: 1 / span 1;
+  grid-row: 7;
+  z-index: 9;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.work-space:hover,
+.about-space:hover,
+.news-space:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 25%;
+  height: 100vh;
+  position: absolute;
+  left: 75%;
+
+  z-index: 1;
+}
+
+.container p,
+h1 {
+  padding: 1.25rem;
+}
+
+.none {
+  display: none;
+}
+.display {
+  display: block;
+}
+
+.thumb-1,
+.thumb-2,
+.thumb-3,
+.thumb-4,
+.thumb-5 {
+  cursor: pointer;
+}
+
+
+
+.thumb-1 {
+  padding: 1.25rem;
+  background: no-repeat center/100vh url("../img/thumb-1.jpg");
+}
+.thumb-2 {
+  padding: 1.25rem;
+  background: no-repeat center/100% url("../img/thumb-2.jpg");
+}
+.thumb-3 {
+  padding: 1.25rem;
+  background: no-repeat center/100% url("../img/thumb-7.jpg");
+}
+.thumb-4 {
+  padding: 1.25rem;
+  background: no-repeat center/100% url("../img/thumb-24.jpg");
+}
+.thumb-5 {
+  padding: 1.25rem;
+  background: no-repeat center/100% url("../img/thumb-27.jpg");
+}
+
+.is-opened {
+  padding-top: 30%;
+
+}
+
+.thumb-2 p {
+  display: none;
+}
+.thumb-3 p {
+  display: none;
+}
+
+.img-container {
+  width: 75%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(75%, auto));
+  grid-template-rows: repeat(auto-fill, minmax(0%, auto));
+  z-index: 1;
+}
+
+.img-item {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  content: url('../img/main/picture.jpg');
+}
+.img-item2 {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  content: url('../img/mockup/mockup-0.png');
+}
