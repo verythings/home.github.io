@@ -9,20 +9,29 @@
       name="viewport"
       content="user-scalable=no, width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <meta name="description" content="Verythings">
-    <meta name="keywords" content="Verythings">
-    <meta itemprop="name" content="Verythings">
-    <meta itemprop="description" content="Verythings">
-    <meta itemprop="image" content="https://assets.codepen.io/7604869/og-image.jpg">
-    <meta property="og:url" content="https://minguhong.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Verythings">
-    <meta property="og:description" content="Verythings">
-    <meta property="og:image" content="https://assets.codepen.io/7604869/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Verythings">
-    <meta name="twitter:description" content="Verythings">
-    <meta name="twitter:image" content="https://assets.codepen.io/7604869/og-image.jpg">
+    <meta name="description" content="Verythings" />
+    <meta name="keywords" content="Verythings" />
+    <meta itemprop="name" content="Verythings" />
+    <meta itemprop="description" content="Verythings" />
+    <meta
+      itemprop="image"
+      content="https://assets.codepen.io/7604869/og-image.jpg"
+    />
+    <meta property="og:url" content="verythings.org" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Verythings" />
+    <meta property="og:description" content="Verythings" />
+    <meta
+      property="og:image"
+      content="https://assets.codepen.io/7604869/og-image.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Verythings" />
+    <meta name="twitter:description" content="Verythings" />
+    <meta
+      name="twitter:image"
+      content="https://assets.codepen.io/7604869/og-image.jpg"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
@@ -46,25 +55,24 @@
   </head>
 
   <body>
-    <main>
-
-        <div class="logo">
-          <span class="l">
-            <a href="../../index.html"
-              ><img src="./assets/img/logo.svg"
-            /></a>
-          </span>
-        </div>
-        <div class="header-blend">
-        <div class="blended work-space">
+    <main id="top">
+      <div class="logo">
+        <span class="l">
+          <a href="../../index.html"
+            ><img src="./assets/img/logo.svg"
+          /></a>
+        </span>
+      </div>
+      <div class="header-blend">
+        <div class="work-space">
           <a href="./assets/pages/work.html" class="l">Work</a>
         </div>
-        <div class="blended about-space">
+        <div class="about-space">
           <span class="l">
             <a href="./assets/pages/about.html">About</a>
           </span>
         </div>
-        <div class="blended news-space">
+        <div class="news-space">
           <span class="l">
             <a href="./assets/pages/work.html">News</a>
           </span>
@@ -72,16 +80,19 @@
       </div>
     </main>
 
+    <video
+      id="intro-video"
+      data-src="./assets/img/main/default.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+    >
+      <source data-src="./assets/img/main/900.mp4" data-mw="900" />
+      <source data-src="./assets/img/main/480.mov" data-mw="480" />
+    </video>
 
-
-    <video class="main-video"
-    autoplay
-    muted
-    loop
-    playsinline
-    style="position: absolute; width: 100%; height: 100vh; object-fit: cover; z-index: 0"
-  >
-    <source src="./assets/img/main/main-2.mp4" type="video/mp4" />
-  </video>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/video.js"></script>
   </body>
 </html>
