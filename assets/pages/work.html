@@ -37,20 +37,20 @@
   <body class="home custom-cursor">
     <div class="main viewport-container has-video">
       <main id="top">
-        <div class="logo-l">
+        <div class="logo blend">
           <span class="l">
             <a href="../../index.html"><img src="../img/logo.svg" /></a>
           </span>
         </div>
 
-        <div class="header-blend">
+        <div class="header blend">
           <div class="blended work-space-l">
             <a href="./work.html" class="l">Work</a>
           </div>
           <div class="category-view">
             <div class="category-view-1">Branding</div>
             <div class="category-view-2">Space</div>
-            <div class="category-view-3">Pop-up styling</div>
+            <div class="category-view-3">Vmd</div>
             <div class="category-view-4">Planting</div>
             <div class="category-view-5">Exhibition</div>
           </div>
@@ -696,11 +696,11 @@
     ></script>
     <script>
       $(window).load(function () {
-        $(".category-view").slideDown(1000, "linear");
+        $(".category-view").slideDown(800, "linear");
       });
 
       $(".category-view-1").click(function () {
-        $(".portrait").slideToggle(1000);
+        $(".portrait").hide();
       });
 
       window.dataLayer = window.dataLayer || [];
