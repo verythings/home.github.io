@@ -14330,7 +14330,7 @@ $(document).ready(function () {
           "skipped" === e.data("jg.loaded")
         ) {
           var s =
-              this.galleryWidth*1.4 -
+              this.galleryWidth*1.62 -
               2 * this.border -
               (this.buildingRow.entriesBuff.length - 1) *
                 this.settings.margins,
